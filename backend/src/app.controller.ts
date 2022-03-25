@@ -1,4 +1,5 @@
 import { Body, Controller, Get, Post } from '@nestjs/common';
+import { validate } from 'class-validator';
 import { AppService } from './app.service';
 import { User } from './user.dto';
 
@@ -19,6 +20,6 @@ export class AppController {
   @Post()
   createUser(@Body() userObj : User) {
     this.appService.createUser(userObj);
-    return "Created Successfully!";
+    return "Created Successfully!";      
   }
 }
