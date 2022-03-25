@@ -1,5 +1,8 @@
 # microservice_project
 
+Communication protocol: TCP
+Framework: Nest.js
+
 1. Backend/GateWay
 
   This acts as the backend server which deals with all api endpoints. This creates a basic user object and stores it inside local file. After storing it emits an event to analytics service which stores the timestamp of the created user.
