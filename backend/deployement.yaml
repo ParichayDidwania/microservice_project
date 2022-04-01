@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: backend-server
-        image: parichaydidwania/backend-app:v2
+        image: parichaydidwania/backend-app:v3
         ports:
         - containerPort: 3000
