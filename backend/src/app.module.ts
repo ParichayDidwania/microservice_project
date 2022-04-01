@@ -9,6 +9,10 @@ import { AppService } from './app.service';
       {
         name: "ANALYTICS",
         transport: Transport.TCP,
+        options: {
+          host: 'http://192.168.49.2',
+          port: 31111
+        }
       }
     ])
   ],
