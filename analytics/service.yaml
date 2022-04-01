@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: analytics-app-service
+spec:
+  selector:
+    app: analytics-app 
+  type: LoadBalancer
+  ports:
+  - port: 5000
+    targetPort: 3000
+    nodePort: 31110

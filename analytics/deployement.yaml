@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: analytics-app-deployement
+  labels:
+    app: analytics-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: analytics-app
+  template:
+    metadata:
+      labels:
+        app: analytics-app
+    spec:
+      containers:
+      - name: analytics-server
+        image: parichaydidwania/backend-app:latest
+        ports:
+        - containerPort: 3000
