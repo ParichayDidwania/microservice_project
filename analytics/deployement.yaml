@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: analytics-server
-        image: parichaydidwania/analytics:v2
+        image: parichaydidwania/analytics:v3
         ports:
         - containerPort: 3000
