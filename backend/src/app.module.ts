@@ -10,7 +10,7 @@ import { AppService } from './app.service';
         name: "ANALYTICS",
         transport: Transport.TCP,
         options: {
-          host: '10.96.78.240',
+          host: '10.99.0.121',
           port: 5000
         }
       }
