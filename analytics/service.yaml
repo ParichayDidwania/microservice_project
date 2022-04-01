@@ -5,8 +5,6 @@ metadata:
 spec:
   selector:
     app: analytics-app 
-  type: LoadBalancer
   ports:
   - port: 5000
     targetPort: 3000
-    nodePort: 31111
