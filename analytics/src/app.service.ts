@@ -9,6 +9,7 @@ export class AppService {
   }
 
   createUserLogs(email: string) {
+    console.log(email);
     this.logs.push({
       email: email,
       timestamp: new Date(),
