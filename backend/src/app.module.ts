@@ -10,7 +10,7 @@ import { AppService } from './app.service';
         name: "ANALYTICS",
         transport: Transport.TCP,
         options: {
-          host: 'analytics-app-service.default.svc.cluster.local',
+          host: '10.109.110.30',
           port: 5000
         }
       }
